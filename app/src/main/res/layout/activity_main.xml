@@ -16,8 +16,102 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:id="@+id/imageView"
+        android:id="@+id/introPageBackground"
         android:src="@drawable/background"
         android:scaleType="centerCrop"
-        android:background="@drawable/background2" />
+        android:layout_alignTop="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Sidek!ck"
+        android:id="@+id/sidekickWelcomeHeader"
+        android:textColor="@color/colorPrimary"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/textView"
+        android:layout_alignLeft="@+id/introPageBackground"
+        android:layout_alignStart="@+id/introPageBackground" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Rules"
+        android:id="@+id/sidekickWelcomescreenRules"
+        android:textStyle="normal"
+        android:textSize="35sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@+id/sidekickWelcomeHeader"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="1. Have Fun!! This is a service that should be exciting to use!"
+        android:id="@+id/textView2"
+        android:textColor="#ffffff"
+        android:background="@color/colorAccent"
+        android:textSize="25sp"
+        android:layout_below="@+id/sidekickWelcomescreenRules"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="2. Meet in a public place to meet your fellow sidekicks."
+        android:id="@+id/textView3"
+        android:background="@color/colorAccent"
+        android:textSize="25sp"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/textView2"
+        android:layout_alignLeft="@+id/introPageBackground"
+        android:layout_alignStart="@+id/introPageBackground"
+        android:layout_marginTop="25dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="3. Do not discriminate under any circumstances."
+        android:id="@+id/textView4"
+        android:background="@color/colorAccent"
+        android:textSize="25sp"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/textView3"
+        android:layout_alignLeft="@+id/introPageBackground"
+        android:layout_alignStart="@+id/introPageBackground"
+        android:layout_marginTop="25dp"/>
+
+    <Switch
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:text="agree to the rules?"
+        android:id="@+id/switchButtonAgreeToRules"
+        android:checked="false"
+        android:textColor="@color/colorAccent"
+        android:textSize="30sp"
+        android:layout_above="@+id/button"
+        android:layout_alignLeft="@+id/introPageBackground"
+        android:layout_alignStart="@+id/introPageBackground"
+        android:background="@color/colorPrimary"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Continue"
+        android:id="@+id/button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/sidekickWelcomescreenRules"
+        android:layout_alignStart="@+id/sidekickWelcomescreenRules" />
+
+
 </RelativeLayout>
