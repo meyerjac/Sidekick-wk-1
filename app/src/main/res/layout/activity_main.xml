@@ -91,16 +91,6 @@
         android:layout_alignStart="@+id/introPageBackground"
         android:layout_marginTop="25dp"/>
 
-    <CheckBox
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="#ffffff"
-        android:text="check the box if you agree to the rules"
-        android:background="@color/colorAccent"
-        android:id="@+id/checkBox"
-        android:layout_marginBottom="36dp"
-        android:layout_above="@+id/firstContinueButton"
-        android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="wrap_content"
@@ -110,8 +100,6 @@
         android:layout_alignParentBottom="true"
         android:layout_alignLeft="@+id/sidekickWelcomescreenRules"
         android:layout_alignStart="@+id/sidekickWelcomescreenRules" />
-
-
 
 
 </RelativeLayout>
